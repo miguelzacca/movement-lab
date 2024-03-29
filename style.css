@@ -89,6 +89,41 @@ main {
   align-items: center;
 }
 
+main #fixed {
+  position: fixed;
+  bottom: 2.5rem;
+  right: 2.5rem;
+  padding: 1.2rem 2.5rem;
+  font-size: 1.7rem;
+  color: var(--initial-text-color);
+  background-color: #ec7f18;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  gap: 1rem;
+  border-radius: 25px;
+  border: 0;
+  box-shadow: 1px 1px 5px #00000099;
+  cursor: pointer;
+  transition: all 0.2s;
+
+  &:hover {
+    scale: 1.05;
+  }
+
+  &:active {
+    transition: all 0.1s;
+    scale: 0.95;
+  }
+}
+
+main #fixed img {
+  width: 2.5rem;
+  aspect-ratio: 1;
+  filter: invert(1);
+}
+
 section {
   width: 100%;
 }
@@ -138,7 +173,7 @@ section {
 }
 
 #intro div img {
-  width: 45rem;
+  width: 44rem;
   aspect-ratio: 4/1;
 }
 
@@ -292,4 +327,55 @@ section {
 #personal .display-container .container div p {
   font-size: 1.6rem;
   color: var(--black-title-color);
+}
+
+#procedure {
+  background-image: url("./assets/img/procedure-background.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  padding: 5rem 10rem;
+  gap: 5rem;
+}
+
+#procedure .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+#procedure .content h3 {
+  font-size: 3rem;
+  color: var(--initial-text-color);
+}
+
+#procedure .content div {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+#procedure .content div p {
+  font-size: 1.7rem;
+  color: #ffffffdd;
+  max-width: 40rem;
+}
+
+#procedure .content img {
+  width: 10rem;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  filter: invert(1);
+  padding: 3rem;
+  background-color: #4caca8;
+  rotate: 180deg;
+}
+
+#procedure .content:last-child img {
+  rotate: 90deg;
 }
