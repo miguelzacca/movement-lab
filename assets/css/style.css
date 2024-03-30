@@ -134,7 +134,7 @@ section {
 
 #home {
   height: calc(100vh - var(--view-margin));
-  background-image: url("./assets/img/home-backgroung.webp");
+  background-image: url("../img/home-backgroung.webp");
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -335,7 +335,7 @@ section {
 }
 
 #procedure {
-  background-image: url("./assets/img/procedure-background.webp");
+  background-image: url("../img/procedure-background.webp");
   background-size: cover;
   background-repeat: no-repeat;
   height: max-content;
@@ -552,7 +552,7 @@ section {
   display: flex;
   align-items: center;
   flex-direction: column;
-  background-image: url("./assets/img/procedure-background.webp");
+  background-image: url("../img/procedure-background.webp");
   background-size: cover;
   background-repeat: no-repeat;
   overflow: hidden;
