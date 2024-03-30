@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
 * {
   padding: 0;
   margin: 0;
@@ -54,10 +56,10 @@ header nav img[alt="Logo"] {
 
 header nav ul {
   display: flex;
+}
 
-  & li {
-    list-style: none;
-  }
+header nav ul li {
+  list-style: none;
 }
 
 header nav ul li a {
@@ -66,10 +68,10 @@ header nav ul li a {
   color: var(--initial-text-color);
   font-size: 1.5rem;
   transition: all 0.25s;
+}
 
-  &:hover {
-    color: var(--hover-text-color);
-  }
+header nav ul li a:hover {
+  color: var(--hover-text-color);
 }
 
 header nav ul li:last-child a {
@@ -77,11 +79,11 @@ header nav ul li:last-child a {
   color: var(--black-subtext-color);
   border-radius: 1rem;
   margin-left: 1rem;
+}
 
-  &:hover {
-    background-color: var(--hover-text-color);
-    color: var(--initial-text-color);
-  }
+header nav ul li:last-child a:hover {
+  background-color: var(--hover-text-color);
+  color: var(--initial-text-color);
 }
 
 main {
@@ -108,16 +110,16 @@ main #fixed {
   box-shadow: 0.1rem 0.1rem 0.5rem #00000099;
   cursor: pointer;
   transition: all 0.25s;
+}
 
-  &:hover {
-    background-color: var(--gray-bg-color);
-    color: #262626;
+main #fixed:hover {
+  background-color: var(--gray-bg-color);
+  color: #262626;
+}
 
-    & img {
-      transition: all 0.25s;
-      filter: invert(0);
-    }
-  }
+main #fixed:hover img {
+  transition: all 0.25s;
+  filter: invert(0);
 }
 
 main #fixed img {
@@ -199,11 +201,11 @@ section {
   height: max-content;
   gap: 0.7rem;
   padding: 0 0.7rem;
+}
 
-  & img {
-    flex: 1;
-    aspect-ratio: 1/2;
-  }
+#images img {
+  flex: 1;
+  aspect-ratio: 1/2;
 }
 
 #info {
@@ -485,10 +487,10 @@ section {
   font-size: 1.7rem;
   border: 0;
   cursor: pointer;
+}
 
-  &:hover {
-    filter: brightness(1.25);
-  }
+#pricing .container a button:hover {
+  filter: brightness(1.25);
 }
 
 #pricing .container .info {
@@ -619,10 +621,10 @@ section {
   border-radius: 0.5rem;
   color: #ffffff;
   cursor: pointer;
+}
 
-  &:hover {
-    filter: brightness(0.8);
-  }
+#contact .container form button:hover {
+  filter: brightness(0.8);
 }
 
 footer {

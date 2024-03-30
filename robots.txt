@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Canonical: https://movement-lab.netlify.app/
