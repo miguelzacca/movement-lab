@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Canonical: https://movement-lab.netlify.app/
+Sitemap: https://movement-lab.netlify.app/sitemap.xml
