@@ -5,7 +5,6 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "Poppins";
-  overflow-x: hidden !important;
 }
 
 html {
@@ -131,6 +130,7 @@ main #fixed img {
 
 section {
   width: 100%;
+  overflow-x: hidden !important;
 }
 
 #home {
