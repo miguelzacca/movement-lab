@@ -1,1 +1,1 @@
-netlify: https://movement-lab.netlify.app
+netlify: https://movementlab.netlify.app
