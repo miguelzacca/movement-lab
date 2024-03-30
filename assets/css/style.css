@@ -5,6 +5,7 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "Poppins";
+  overflow-x: hidden !important;
 }
 
 html {
@@ -186,7 +187,6 @@ section {
   text-align: center;
   font-size: 1.7rem;
   color: var(--after-subtext-color);
-  letter-spacing: 0.05rem;
 }
 
 #intro div strong {
@@ -668,4 +668,192 @@ footer .icon-content a img[alt="Contact icon"] {
 
 footer .icon-content a:hover {
   filter: brightness(0.5);
+}
+
+@media screen and (max-width: 1350px) {
+  html {
+    font-size: 0.8vw;
+  }
+
+  #intro video {
+    width: 50%;
+    padding-left: 5rem;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  html {
+    font-size: 9px;
+  }
+
+  header {
+    --header-height: 8rem;
+  }
+
+  header img[alt="Logo"] {
+    scale: 1.2;
+  }
+
+  header ul li {
+    display: none;
+  }
+
+  #home {
+    height: calc(95vh);
+  }
+
+  #home h1 {
+    font-size: 6rem;
+  }
+
+  #home h2 {
+    font-size: 4rem;
+  }
+
+  #intro {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 5rem;
+    padding: 2rem 0;
+  }
+
+  #intro video {
+    padding: 0;
+    min-width: 97vw;
+  }
+
+  #intro div {
+    gap: 5rem;
+    max-width: 95vw;
+  }
+
+  #intro div p {
+    font-size: 2rem;
+  }
+
+  #intro div img {
+    width: 100%;
+  }
+
+  #images {
+    flex-direction: column;
+    padding: 5rem 0.5rem;
+  }
+
+  #images img {
+    width: 100%;
+    aspect-ratio: 1/1.75;
+  }
+
+  #info .primary-content {
+    gap: 2rem;
+  }
+
+  #info .primary-content p {
+    max-width: 90vw;
+  }
+
+  #info .primary-content h2 {
+    font-size: 3rem;
+    text-align: center;
+    width: 100%;
+  }
+
+  #info .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #info .container div p {
+    font-size: 1.6rem;
+    max-width: 75vw;
+  }
+
+  #personal {
+    padding-bottom: 5rem;
+  }
+
+  #personal .display-container {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  #personal .display-container .container img {
+    width: 97vw;
+    aspect-ratio: 1/1.75;
+  }
+
+  #procedure {
+    padding-left: 2rem;
+    gap: 10rem;
+  }
+
+  #procedure h3 {
+    width: 150% !important;
+    font-size: 2.2rem !important;
+  }
+
+  #pricing {
+    flex-direction: column;
+    gap: 10rem;
+    padding: 10rem 0;
+  }
+
+  #pricing .container {
+    scale: 1.1;
+  }
+
+  #why h2 {
+    font-size: 4rem;
+    width: 100%;
+    text-align: center;
+  }
+
+  #why .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 80vw;
+  }
+
+  #contact {
+    padding-bottom: 7rem;
+  }
+
+  #contact .container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12rem;
+  }
+
+  #contact .container h2 {
+    width: 100%;
+    font-size: 7rem;
+    text-align: center;
+  }
+
+  #contact .container h3 {
+    margin-top: 5rem;
+    font-size: 3rem;
+  }
+
+  #contact .container form {
+    scale: 1.25;
+  }
+
+  footer {
+    flex-direction: column;
+    gap: 5rem;
+  }
+
+  footer p {
+    width: 100%;
+    text-align: center;
+    line-height: 5rem !important;
+    font-size: 2rem !important;
+  }
 }
