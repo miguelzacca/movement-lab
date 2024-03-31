@@ -39,6 +39,11 @@ header {
   padding: 0 3rem;
 }
 
+header input,
+header span {
+  display: none;
+}
+
 header nav {
   display: flex;
   justify-content: space-between;
@@ -706,6 +711,75 @@ footer .icon-content a:hover {
     display: none;
   }
 
+  header .container {
+    position: relative;
+    width: 10rem;
+    aspect-ratio: 1;
+    transform: translateX(25%);
+  }
+
+  header input,
+  header span {
+    text-align: center;
+    color: #eee;
+    display: flex;
+    position: absolute;
+    font-size: 4rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  header input {
+    scale: 3;
+    transform: translate(-17%, -15%);
+    opacity: 0;
+    z-index: 999;
+  }
+
+  header input:checked ~ ul li {
+    display: flex;
+    width: 20rem;
+  }
+
+  header input:checked ~ ul li a {
+    color: #000000;
+    text-align: center;
+    width: 100%;
+    padding: 1rem 0;
+    font-size: 1.8rem;
+    margin: 0;
+  }
+
+  header input:checked ~ ul li a:hover {
+    color: #e47711;
+    background-color: unset;
+    background-color: #ddd;
+    border-radius: 0;
+    width: 100%;
+  }
+
+  header .x {
+    display: none;
+  }
+
+  header input:checked ~ .x {
+    display: flex;
+  }
+
+  header input:checked ~ .e {
+    display: none;
+  }
+
+  header input:checked ~ ul {
+    position: absolute;
+    top: calc(var(--header-height) - 1rem);
+    left: 0%;
+    transform: translateX(-50%);
+    background-color: #ffffff;
+    flex-direction: column;
+  }
+
   #home {
     height: calc(95vh);
   }
@@ -750,8 +824,8 @@ footer .icon-content a:hover {
   }
 
   #images img {
-    width: 100%;
-    aspect-ratio: 1/1.75;
+    width: 80%;
+    aspect-ratio: 1/2;
   }
 
   #info {
