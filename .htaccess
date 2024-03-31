@@ -1,0 +1,3 @@
+RewriteEngine On
+RewriteCond %(HTTP_HOST) ^www\.movementlab\.netlify\.app [NC]
+RewriteRule ^(.*)$ https://movimentlab.netlify.app/$1 [L,R=301]
